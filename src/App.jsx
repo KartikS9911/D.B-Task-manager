@@ -24,7 +24,7 @@ export default function App() {
   }, [tasks, setStoredTasks])
 
   const handleAdd = useCallback(
-    (payload) => dispatch({ type: 'Upload_TASK', payload }),
+    (payload) => dispatch({ type: 'Add_TASK', payload }),
     []
   )
   const handleToggle = useCallback(
